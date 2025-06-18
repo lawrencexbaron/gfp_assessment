@@ -42,13 +42,14 @@ Open your browser and navigate to `http://localhost:8000`.
 ### 6. Folder Structure
 
 routes/web.php
-├── GET /issues → List all assigned open issues
-├── GET /issue/{encoded} → View issue details
+  - GET /issues            → List all assigned open issues
+  - GET /issue/{encoded}   → View issue details
 
 app/Services/GitHubService.php
-├── getOpenAssignedIssues() → Fetches issues via GitHub API
-├── getIssueDetails() → Fetches specific issue details
+  - getOpenAssignedIssues() → Fetches issues via GitHub API
+  - getIssueDetails()       → Fetches specific issue details
 
 resources/views/issues/
-├── index.blade.php → Issues list view
-├── show.blade.php → Single issue detail view
+  - index.blade.php         → Issues list view
+  - show.blade.php          → Single issue detail view
+
